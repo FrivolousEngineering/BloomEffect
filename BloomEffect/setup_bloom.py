@@ -9,7 +9,7 @@ import numpy
 
 ext_modules = cythonize(Extension(
     'bloom', ['bloom.pyx'],
-    extra_compile_args=["/openmp", "/Qpar", "/fp:fast", "/O2", "/Oy", "/Ot"],
+    extra_compile_args=[],
     language="c",
     define_macros=[("NPY_NO_DEPRECATED_API", "NPY_1_7_API_VERSION")]
     )
